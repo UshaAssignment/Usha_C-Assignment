@@ -1,0 +1,22 @@
+using Aspose.Html;
+using System.IO;
+using (var document = new HTMLDocument("input.html"))
+    {
+        var body = document.Body;
+var table = (HTMLTableElement)document.CreateElement("table");
+        table.Border = "2";
+        table.Align = "center";
+        table.Style.Border = "2px #ff0000 dotted";
+        table.SetAttribute("width", "50%");
+for (int i = 0; i < 3; i++)
+        {
+            var row = (HTMLTableRowElement)table.InsertRow(table.Rows.Length);
+            for (int j = 0; j < 4; j++)
+            {
+                var cell = (HTMLTableCellElement)row.InsertCell(row.Cells.Length);
+                cell.TextContent = $"Row: {i + 1}, Column {j + 1}";
+            }
+        }
+ body.AppendChild(table);
+ document.Save("create-html-table.html");
+    }
