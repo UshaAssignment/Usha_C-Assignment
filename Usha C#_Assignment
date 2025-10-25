@@ -1,3 +1,16 @@
+<table style="border: 2px #5e5e5e solid" align="center" border="2" width="50%">
+    <tbody>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+
 using Aspose.Html;
 using System.IO;
 using (var document = new HTMLDocument("input.html"))
@@ -20,3 +33,28 @@ for (int i = 0; i < 3; i++)
  body.AppendChild(table);
  document.Save("create-html-table.html");
     }
+[{
+    "Id": "25768d9f-502a-4776-8796-c26d76d6a6eb",
+    "EmployeeName": "Abhay Singh",
+    "StarTimeUtc": "2022-02-22T14:15:00",
+    "EndTimeUtc": "2022-02-22T12:01:00",
+    "EntryNotes": "working on project Take-Two Interactive",
+    "DeletedOn": null
+  },
+  {
+    "Id": "77e4bfce-5b1b-4103-8ae0-5e22a96fe6f4",
+    "EmployeeName": "Tamoy Smith",
+    "StarTimeUtc": "2022-02-21T09:42:00",
+    "EndTimeUtc": "2022-02-21T13:02:00",
+    "EntryNotes": "analyzing ticket in Towers Perrin",
+    "DeletedOn": null
+  },
+  {
+    "Id": "ac9cc343-083c-45bf-9058-9a73d15b76f7",
+    "EmployeeName": "Mary Poppins",
+    "StarTimeUtc": "2022-02-23T12:40:00",
+    "EndTimeUtc": "2022-02-23T16:26:00",
+    "EntryNotes": "debugging issue in THQ",
+    "DeletedOn": null
+  }
+]
